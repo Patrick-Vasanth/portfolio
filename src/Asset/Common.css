@@ -1,0 +1,256 @@
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(#14171c 40%, #01eefe);
+  background-attachment: fixed;
+}
+
+/* Navbar css */
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  z-index: 1;
+  height: 90px;
+  padding: 0 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.navList {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  height: inherit;
+  justify-content: space-between;
+}
+
+.navList > li {
+  list-style: none;
+}
+
+.navList button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+  transition: all 0.5s;
+  font-weight: 600 !important;
+  position: relative;
+}
+
+.navList button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.navList button:hover::after {
+  width: 100%;
+}
+
+/* .navList button:hover {
+  color: #01eefe;
+  border-bottom: 4px solid #fff;
+} */
+
+.navList button.active {
+  color: #01eefe;
+  border-bottom: 2px solid #fff;
+}
+
+.navBar.scrolled {
+  background-color: #01edfeee;
+  color: #2b2b2b !important;
+}
+
+.navBar.scrolled > .navList > li > button {
+  color: #2b2b2b;
+}
+
+.navBar.scrolled > .navList > li > button.active {
+  color: white;
+  border-bottom: 4px solid #2b2b2b;
+}
+
+.nav {
+  height: 90px;
+  width: 100%;
+}
+
+/* End of navbar css */
+
+/* Home Page CSS */
+
+.homes {
+  width: 80%;
+  color: #fff;
+  border-radius: 20px;
+}
+
+
+
+/* End of homepage css  */
+
+/* Introduction css */
+
+.intro {
+  background: #20242d;
+  height: 100vh;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.imagePentagon {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  filter: drop-shadow(
+    0px 10px 15px #01eefe
+  ) !important; /* Soft shadow effect */
+}
+
+.imagePentagon svg {
+  overflow: visible !important; /* Allows the image to extend outside the pentagon */
+}
+
+.resume > button {
+  width: 150px;
+  padding: 10px 0;
+  background-color: #01eefe;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px 5px #01edfe5d;
+}
+
+.introduction {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.content {
+  width: 50%;
+}
+
+.description {
+  margin: 30px 0;
+}
+
+/* end of intro */
+
+/* about css*/
+
+.cube-container {
+  perspective: 600px;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1.7s ease-in-out;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.front {
+  transform: translateZ(100px);
+  color: #000;
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+  color: #000;
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+  color: #000;
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  color: #000;
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+  color: #000;
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+  color: #000;
+}
+
+.aboutus {
+  background: #20242d;
+  height: 100vh;
+  width: 100%;
+  border-radius: 12px;
+  padding-top: 10%;
+  margin-top: 20px;
+}
+
+/* end of about us */
+
+/*skill css  */
+
+.skills {
+  background: #20242d;
+  height: 100vh;
+  width: 100%;
+  border-radius: 12px;
+  padding-top: 10%;
+  margin-top: 20px;
+}
+
+/* End of skill css */
+
+
+/* Contact css */
+
+.contacts{
+  background: #20242d;
+  height: 100vh;
+  width: 100%;
+  border-radius: 12px;
+  padding-top: 10%;
+  margin-top: 20px;
+}
+
+/* End of contact css */
